@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments - MedSphere</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="/assests/logo-favicon/complete-favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../../assests/logo-favicon/complete-logo.png" alt="logo">
+            <span>MedSphere</span>
+        </div>
+        <input type="checkbox" id="navToggle" class="navToggle" />
+        <nav class="nav">
+            <a href="../home/index.html">Home</a>
+            <a href="../my-appointment-page/my-appointment-page.html">My Appointments</a>
+            <a href="../appointment-page/appointment-page.html" class="contact-btn-mobile">Book Appointment</a>
+            <a href="../about-us/about-us.html">About Us</a>
+            <a href="../auth/login.html">Login</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="contact-btn">Book
+                Appointment</button>
+            <label for="navToggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="page-header">
+            <h1>My Appointments</h1>
+            <p>View and manage your upcoming visits.</p>
+            <div class="divider"></div>
+        </div>
+
+        <!-- Appointments List -->
+        <div class="appointments-list" id="appointmentsList">
+        </div>
+
+        <!-- Book Appointment CTA -->
+        <div class="book-appointment-cta">
+            <h3>Need to Schedule Another Appointment?</h3>
+            <p>Book your next visit with our expert medical professionals.</p>
+            <button class="book-now-btn">
+                <i class="fa-solid fa-calendar-plus"></i> Book New Appointment
+            </button>
+        </div>
+
+        <!-- Empty State (hidden by default, shown when no appointments) -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <div class="empty-icon">
+                <i class="fa-regular fa-calendar-xmark"></i>
+            </div>
+            <h3>No Appointments Yet</h3>
+            <p>You haven't booked any appointments yet.</p>
+            <a href="../appointment-page/appointment-page.html" class="book-now-btn">Book Now</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="../../assests/logo-favicon/complete-logo.png" alt="logo">
+                    <span>MedSphere</span>
+                </div>
+                <p class="footer-description">
+                    Your trusted partner in healthcare, connecting you with expert medical professionals
+                    for a healthier tomorrow. Quality care, compassionate service.
+                </p>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links-container">
+                <!-- Further Information -->
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Further Information</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="../about-us/about-us.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="../appointment-page/appointment-page.html">Book Appointment</a></li>
+                        <li><a href="#">My Appointments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p class="footer-privacy">
+                <a href="#privacy">Privacy Policy</a> •
+                <a href="#terms">Terms of Service</a> •
+                <a href="#cookies">Cookie Policy</a>
+            </p>
+            <p class="footer-copyright">
+                &copy; 2025 MedSphere. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../auth/auth-guard.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+    <script src="../database.js" type="module"></script>
+</body>
+
+</html>

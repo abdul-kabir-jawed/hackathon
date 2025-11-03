@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSphere</title>
+    <link rel="icon" href="/assests/logo-favicon/complete-favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f85fc2f485.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <img src="../../assests/logo-favicon/complete-logo.png" alt="logo">
+                <span>MedSphere</span>
+            </div>
+            <input type="checkbox" id="navToggle" class="navToggle" />
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="../my-appointment-page/my-appointment-page.html">My Appointments</a>
+                <a href="../appointment-page/appointment-page.html" class="contact-btn-mobile">Book Appointment</a>
+                <a href="../about-us/about-us.html">About Us</a>
+                <a href="../auth/login.html">Login</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="contact-btn">Book Appointment</button>
+                <label for="navToggle" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Your Health<br>
+                    Deserves the <span class="italic">right<br>specialist</span>
+                </h1>
+                <p class="hero-subtitle">Connect with top-rated doctors who listen and prioritize your health
+                    journey
+                </p>
+
+                <div class="hero-actions">
+                    <button class="btn-primary">Find a Doctor</button>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Free Checkup</h3>
+                        <p>Comprehensive evaluation with no upfront costs. Limited time offer.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Custom Treatment Plan</h3>
+                        <p>From diagnosis to recovery, we map every step for your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="doctor-placeholder">
+                    <img src="../../assests/images/home/header-doctor-final.png" alt="hero-doctor">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us-section" id="about">
+            <div class="about-us-container">
+                <div class="about-us-header">
+                    <h2 class="about-us-title">About us</h2>
+                    <p class="about-us-description">Our dedicated medical team of highly experienced doctors and
+                        specialists are committed to your unique health journey. Experience healthcare made effortless
+                        with our patient-first approach.</p>
+                </div>
+
+                <!-- What We Offer Section -->
+                <div class="about-section">
+                    <h3 class="about-section-title">What We Offer</h3>
+                    <div class="about-features-grid">
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <h4 class="about-feature-title">24/7 Expert Support</h4>
+                            <p class="about-feature-text">Round-the-clock medical assistance</p>
+                        </div>
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                            <h4 class="about-feature-title">Telemedicine</h4>
+                            <p class="about-feature-text">Connect with specialists from anywhere</p>
+                        </div>
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">
+                                <i class="fa-solid fa-file-medical"></i>
+                            </div>
+                            <h4 class="about-feature-title">Digital Health Records</h4>
+                            <p class="about-feature-text">Secure access to your medical history</p>
+                        </div>
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <h4 class="about-feature-title">Preventive Care Plans</h4>
+                            <p class="about-feature-text">Personalized wellness programs</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements-section" id="achievements">
+            <div class="achievements-header">
+                <h2 class="achievements-title">Our Numbers Speak for Themselves</h2>
+            </div>
+
+            <div class="achievements-grid">
+                <!-- Left Column -->
+                <div id="right-grid">
+                    <div class="achievement-box image-box" style="margin-bottom: 1.5rem;">
+                        <img src="../../assests/images/home/achivement-photo-1.jpg" alt="surgery-photo" loading="lazy">
+                    </div>
+                    <div class="achievement-box stat-box">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-text">Accuracy in Genetic Diseases and Diagnosis</div>
+                    </div>
+                </div>
+
+                <!-- Center Column -->
+                <div class="achievement-box-center-image">
+                    <img src="../../assests/images/home/achivement-photo-center.jpg" alt="doctor-in-proud"
+                        loading="lazy">
+                </div>
+
+                <!-- Right Column -->
+                <div id="left-grid">
+                    <div class="achievement-box stat-box" style="margin-bottom: 1.5rem;">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-text">Members Feel Significantly Better in 6 Weeks</div>
+                    </div>
+                    <div class="achievement-box image-box">
+                        <img alt="comforting-doctor" src="../../assests/images/home/achivement-photo-left.jpg"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section class="doctors-section" id="doctors">
+            <div class="doctors-header">
+                <h2 class="doctors-title">Let's Meet With Expert Doctors</h2>
+                <p class="doctors-description">Let's meet with expert doctors who are ready to provide trusted care and
+                    accurate guidance</p>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="doctors-carousel">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">What Our Patients Say</h2>
+            </div>
+
+            <!-- First Row - Scroll Right to Left -->
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-1.jpg" alt="testimonial-1">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Sarah Mitchell</h4>
+                                <p class="testimonial-location">New York, USA</p>
+                                <p class="testimonial-text">"Exceptional care and professionalism. Dr. Johnson made me
+                                    feel comfortable throughout my treatment."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-10.jpg" alt="testimonial-10">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Michael Torres</h4>
+                                <p class="testimonial-location">Los Angeles, USA</p>
+                                <p class="testimonial-text">"The telemedicine service is incredible. I got expert advice
+                                    without leaving my home!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-2.jpg" alt="testimonial-2">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Emma Wilson</h4>
+                                <p class="testimonial-location">Chicago, USA</p>
+                                <p class="testimonial-text">"Fast appointment booking and caring staff. Best healthcare
+                                    experience I've ever had."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-11.jpg" alt="testimonial-11">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">James Anderson</h4>
+                                <p class="testimonial-location">Houston, USA</p>
+                                <p class="testimonial-text">"The genetic testing was accurate and the results were
+                                    explained clearly. Highly recommend!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-3.jpg" alt="testimonial-3">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Olivia Martinez</h4>
+                                <p class="testimonial-location">Miami, USA</p>
+                                <p class="testimonial-text">"My recovery was faster than expected thanks to their
+                                    personalized treatment plan."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-19.jpg" alt="testimonial-12">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">David Kim</h4>
+                                <p class="testimonial-location">San Francisco, USA</p>
+                                <p class="testimonial-text">"Professional, efficient, and genuinely caring. MedSphere
+                                    has changed my life!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-4.jpg" alt="testimonial-4">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Sophia Brown</h4>
+                                <p class="testimonial-location">Boston, USA</p>
+                                <p class="testimonial-text">"The 24/7 support team is amazing. They were there when I
+                                    needed them most."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for seamless loop -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-1.jpg" alt="testimonial-1">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Sarah Mitchell</h4>
+                                <p class="testimonial-location">New York, USA</p>
+                                <p class="testimonial-text">"Exceptional care and professionalism. Dr. Johnson made me
+                                    feel comfortable throughout my treatment."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-10.jpg" alt="testimonial-10">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Michael Torres</h4>
+                                <p class="testimonial-location">Los Angeles, USA</p>
+                                <p class="testimonial-text">"The telemedicine service is incredible. I got expert advice
+                                    without leaving my home!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-2.jpg" alt="testimonial-2">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Emma Wilson</h4>
+                                <p class="testimonial-location">Chicago, USA</p>
+                                <p class="testimonial-text">"Fast appointment booking and caring staff. Best healthcare
+                                    experience I've ever had."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-11.jpg" alt="testimonial-11">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">James Anderson</h4>
+                                <p class="testimonial-location">Houston, USA</p>
+                                <p class="testimonial-text">"The genetic testing was accurate and the results were
+                                    explained clearly. Highly recommend!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-3.jpg" alt="testimonial-3">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Olivia Martinez</h4>
+                                <p class="testimonial-location">Miami, USA</p>
+                                <p class="testimonial-text">"My recovery was faster than expected thanks to their
+                                    personalized treatment plan."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-17.jpg" alt="testimonial-12">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">David Kim</h4>
+                                <p class="testimonial-location">San Francisco, USA</p>
+                                <p class="testimonial-text">"Professional, efficient, and genuinely caring. MedSphere
+                                    has changed my life!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-4.jpg" alt="testimonial-4">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Sophia Brown</h4>
+                                <p class="testimonial-location">Boston, USA</p>
+                                <p class="testimonial-text">"The 24/7 support team is amazing. They were there when I
+                                    needed them most."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row - Scroll Left to Right -->
+            <div class="slider slider-reverse">
+                <div class="slide-track slide-track-reverse">
+                    <!-- Duplicate for seamless loop -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-13.jpg" alt="testimonial-13">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Lucas Thompson</h4>
+                                <p class="testimonial-location">Seattle, USA</p>
+                                <p class="testimonial-text">"The digital health records system is so convenient.
+                                    Everything is at my fingertips."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-5.jpg" alt="testimonial-5">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Isabella Garcia</h4>
+                                <p class="testimonial-location">Phoenix, USA</p>
+                                <p class="testimonial-text">"Dr. Rodriguez is wonderful with my children. They actually
+                                    look forward to checkups now!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-14.jpg" alt="testimonial-14">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Ethan Miller</h4>
+                                <p class="testimonial-location">Denver, USA</p>
+                                <p class="testimonial-text">"Transparent pricing and no hidden fees. I knew exactly what
+                                    to expect financially."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-6.jpg" alt="testimonial-6">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Ava Davis</h4>
+                                <p class="testimonial-location">Atlanta, USA</p>
+                                <p class="testimonial-text">"My surgery went perfectly. Dr. Wilson's expertise gave me
+                                    confidence throughout."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-15.jpg" alt="testimonial-15">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Noah Rodriguez</h4>
+                                <p class="testimonial-location">Portland, USA</p>
+                                <p class="testimonial-text">"The preventive care program helped me avoid serious health
+                                    issues. Grateful every day!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-7.jpg" alt="testimonial-7">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Mia Johnson</h4>
+                                <p class="testimonial-location">Austin, USA</p>
+                                <p class="testimonial-text">"Quick appointments, minimal wait times, and excellent care.
+                                    What more could I ask for?"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-16.jpg" alt="testimonial-16">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Liam White</h4>
+                                <p class="testimonial-location">Nashville, USA</p>
+                                <p class="testimonial-text">"The entire staff treats you like family. This is healthcare
+                                    done right!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-13.jpg" alt="testimonial-13">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Lucas Thompson</h4>
+                                <p class="testimonial-location">Seattle, USA</p>
+                                <p class="testimonial-text">"The digital health records system is so convenient.
+                                    Everything is at my fingertips."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-5.jpg" alt="testimonial-5">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Isabella Garcia</h4>
+                                <p class="testimonial-location">Phoenix, USA</p>
+                                <p class="testimonial-text">"Dr. Rodriguez is wonderful with my children. They actually
+                                    look forward to checkups now!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-14.jpg" alt="testimonial-14">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Ethan Miller</h4>
+                                <p class="testimonial-location">Denver, USA</p>
+                                <p class="testimonial-text">"Transparent pricing and no hidden fees. I knew exactly what
+                                    to expect financially."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-6.jpg" alt="testimonial-6">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Ava Davis</h4>
+                                <p class="testimonial-location">Atlanta, USA</p>
+                                <p class="testimonial-text">"My surgery went perfectly. Dr. Wilson's expertise gave me
+                                    confidence throughout."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-15.jpg" alt="testimonial-15">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Noah Rodriguez</h4>
+                                <p class="testimonial-location">Portland, USA</p>
+                                <p class="testimonial-text">"The preventive care program helped me avoid serious health
+                                    issues. Grateful every day!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-7.jpg" alt="testimonial-7">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Mia Johnson</h4>
+                                <p class="testimonial-location">Austin, USA</p>
+                                <p class="testimonial-text">"Quick appointments, minimal wait times, and excellent care.
+                                    What more could I ask for?"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <img src="../../assests/images/home/testimonial-16.jpg" alt="testimonial-16">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4 class="testimonial-name">Liam White</h4>
+                                <p class="testimonial-location">Nashville, USA</p>
+                                <p class="testimonial-text">"The entire staff treats you like family. This is healthcare
+                                    done right!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Banner Section -->
+        <section class="appointment-banner">
+            <div class="banner-content">
+                <h2 class="banner-title">Schedule Your Appointment With Us</h2>
+                <p class="banner-description">Take the first step towards better health. Book your consultation with our
+                    expert doctors today and experience personalized care that puts you first.</p>
+                <a href="../appointment-page/appointment-page.html" class="banner-btn">Book Appointment Now</a>
+            </div>
+            <div class="banner-image">
+                <img src="../../assests/images/home/banner.png" alt="statoscope">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="../../assests/logo-favicon/complete-logo.png" alt="logo">
+                        <span>MedSphere</span>
+                    </div>
+                    <p class="footer-description">
+                        Your trusted partner in healthcare, connecting you with expert medical professionals
+                        for a healthier tomorrow. Quality care, compassionate service.
+                    </p>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links-container">
+                    <!-- Further Information -->
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">Further Information</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="../about-us/about-us.html">About Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="footer-links-group">
+                        <h4 class="footer-links-title">Services</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="../appointment-page/appointment-page.html">Book Appointment</a></li>
+                            <li><a href="../my-appointment-page/my-appointment-page.html">My Appointments</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-privacy">
+                    <a href="#privacy">Privacy Policy</a> •
+                    <a href="#terms">Terms of Service</a> •
+                    <a href="#cookies">Cookie Policy</a>
+                </p>
+                <p class="footer-copyright">
+                    &copy; 2025 MedSphere. All rights reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="app.js" type="module"></script>
+        <script src="../database.js" type="module"></script>
+
+</body>
+
+</html>

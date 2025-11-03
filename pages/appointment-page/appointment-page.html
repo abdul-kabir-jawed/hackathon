@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment - MedSphere</title>
+    <link rel="icon" href="/assests/logo-favicon/complete-favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f85fc2f485.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../../assests/logo-favicon/complete-logo.png" alt="logo">
+            <span>MedSphere</span>
+        </div>
+        <input type="checkbox" id="navToggle" class="navToggle" />
+        <nav class="nav">
+            <a href="../home/index.html">Home</a>
+            <a href="../my-appointment-page/my-appointment-page.html">My Appointments</a>
+            <a href="../appointment-page/appointment-page.html" class="contact-btn-mobile">Book Appointment</a>
+            <a href="../about-us/about-us.html">About Us</a>
+            <a href="../auth/login.html">Login</a>
+        </nav>
+        <div class="header-actions">
+            <button class="contact-btn">Book Appointment</button>
+            <label for="navToggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <section class="header-section">
+            <h1>Book Your Appointment</h1>
+            <p>Choose a doctor and reserve your slot below</p>
+            <div class="divider"></div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Expert Doctors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10k+</div>
+                <div class="stat-label">Happy Patients</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Available Service</div>
+            </div>
+        </section>
+
+        <section class="doctors-grid"></section>
+
+        <section class="info-section">
+            <h2>What to Expect</h2>
+            <p>Our doctors are committed to providing exceptional care. Please arrive 15 minutes early for your
+                appointment to complete any necessary paperwork. If you need to cancel or reschedule, kindly give us at
+                least 24 hours notice. We look forward to serving you.</p>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="close-btn-form">&times;</button>
+            <div id="formView">
+                <div class="modal-header">
+                    <h2>Book Appointment</h2>
+                    <p id="doctorInfo"></p>
+                </div>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="patientName">Full Name</label>
+                        <input type="text" id="patientName" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="month">Preferred Month</label>
+                        <select id="month" required aria-placeholder="Enter your desired month">
+                            <option value="" disabled selected>Select a month</option>
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="week">Preferred Day</label>
+                        <select id="week" required aria-placeholder="Enter your desired week">
+                            <option value="" disabled selected>Select a month</option>
+                            <option value="1">Week 1</option>
+                            <option value="2">Week 2</option>
+                            <option value="3">Week 3</option>
+                            <option value="4">Week 4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="day">Preferred Day</label>
+                        <select id="day" required aria-placeholder="Enter your desired day"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" required aria-placeholder="Enter your desired time"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason for Visit</label>
+                        <input type="text" id="reason" required placeholder="Brief description">
+                    </div>
+                    <button type="submit" class="confirm-btn">Confirm Appointment</button>
+                </form>
+            </div>
+            <div class="success-message" id="successView">
+                <div class="success-icon">✓</div>
+                <h3>Appointment Confirmed!</h3>
+                <p>We've sent a confirmation email with all the details.</p>
+                <button class="confirm-btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="../../assests/logo-favicon/complete-logo.png" alt="logo">
+                <span>MedSphere</span>
+            </div>
+            <p class="footer-description">
+                Your trusted partner in healthcare, connecting you with expert medical professionals for a healthier
+                tomorrow. Quality care, compassionate service.
+            </p>
+            </div>
+            <div class="footer-links-container">
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Further Information</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="../about-us/about-us.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4 class="footer-links-title">Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Book Appointment</a></li>
+                        <li><a href="../my-appointment-page/my-appointment-page.html">My Appointments</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-privacy">
+                <a href="#privacy">Privacy Policy</a> •
+                <a href="#terms">Terms of Service</a> •
+                <a href="#cookies">Cookie Policy</a>
+            </p>
+            <p class="footer-copyright">&copy; 2025 MedSphere. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js" type="module"></script>
+    <script src="../auth/auth-guard.js" type="module"></script>
+    <script src="../database.js" type="module"></script>
+</body>
+
+</html>

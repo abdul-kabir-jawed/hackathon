@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MedSphere</title>
+    <link rel="icon" href="/assests/logo-favicon/complete-favicon.ico" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f85fc2f485.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="signupContainer">
+        <div id="signupForm">
+            <div class="formHeader">
+                <div class="logo">
+                    <img src="/assests/logo-favicon/complete-logo.png" alt="MedSphere">
+                </div>
+                <h1>Welcome Back</h1>
+                <p>Great to See You Back</p>
+            </div>
+
+            <div class="authTabs">
+                <a class="tabBtn active" href="#">Login</a>
+                <a class="tabBtn" href="signup.html">Sign up</a>
+            </div>
+
+            <form class="signupFormFields">
+                <div id="login-error" class="error-message" style="display: none;"></div>
+
+                <div class="inputGroup fullWidth">
+                    <input type="email" id="login-email" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="inputGroup fullWidth">
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+
+
+
+                <button type="submit" class="signinBtn">Login</button>
+
+
+
+                <div class="loginPrompt">
+                    <p>Don't have an account? <a href="signup.html" class="loginLink">Sign up here</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div id="signupImage">
+            <div class="imageOverlay">
+                <div class="overlayContent">
+                    <h2>Welcome Back</h2>
+                    <p>Find doctors who listen, diagnose with care, and guide you toward better health.</p>
+                </div>
+            </div>
+            <img src="../../assests/images/login/istockphoto-1488889438-612x612.jpg" alt="Doctor consulting a patient"
+                loading="lazy" style="display: none;">
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+    <script src="../database.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+</body>
+
+</html>

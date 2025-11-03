@@ -1,0 +1,565 @@
+/* ========================================
+   1. TYPOGRAPHY & GLOBAL STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Neue Montreal", sans-serif;
+    color: #0D0D0D;
+    background-color: #FAFAFA;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ========================================
+   2. LAYOUT
+   ======================================== */
+#signupContainer {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#signupForm {
+    flex: 1;
+    background: #FFFFFF;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 0;
+    max-height: 100vh;
+    max-width: 50%;
+    overflow-y: hidden;
+}
+
+#signupImage {
+    flex: 1;
+    background-image: url('../../assests/images/login/istockphoto-1488889438-612x612.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 100vh;
+    max-width: 50%;
+}
+
+/* ========================================
+   3. COMPONENTS
+   ======================================== */
+.logo {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.formHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formHeader h1 {
+    font-size: 36px;
+    color: #243b42;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.formHeader p {
+    font-size: 16px;
+    color: #0D0D0D;
+    font-weight: 400;
+}
+
+.authTabs {
+    display: flex;
+    background: #C5DEE6;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 30px;
+}
+
+.tabBtn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    background: transparent;
+    color: #243b42;
+    border-radius: 21px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.signupFormFields {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nameFields,
+.passwordFields {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.inputGroup {
+    flex: 1;
+    position: relative;
+}
+
+.inputGroup.fullWidth {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #C5DEE6;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #0D0D0D;
+    background: #FFFFFF;
+    transition: all 0.3s ease;
+    font-family: "Neue Montreal", sans-serif;
+}
+
+.inputGroup input::placeholder {
+    color: #999;
+    font-weight: 400;
+}
+
+.signupBtn {
+    width: 100%;
+    padding: 18px;
+    background: #243b42;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.signinBtn {
+    width: 100%;
+    padding: 18px;
+    background: #243b42;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.loginPrompt {
+    text-align: center;
+}
+
+.loginPrompt p {
+    font-size: 14px;
+    color: #0D0D0D;
+}
+
+.loginLink {
+    color: #243b42;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(36, 59, 66, 0.8) 0%, rgba(36, 59, 66, 0.6) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.overlayContent {
+    text-align: center;
+    color: white;
+    max-width: 500px;
+}
+
+.overlayContent h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.overlayContent p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.logoutContent {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.logoutMessage {
+    margin-bottom: 40px;
+}
+
+.logoutIcon {
+    font-size: 48px;
+    color: #243b42;
+    margin-bottom: 20px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.logoutMessage h2 {
+    font-size: 24px;
+    color: #243b42;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.logoutMessage p {
+    font-size: 16px;
+    color: #0D0D0D;
+    line-height: 1.6;
+}
+
+.logoutActions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.logoutBtn {
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 24px;
+    color: #243b42;
+    font-weight: 600;
+}
+
+.loading-spinner i {
+    font-size: 18px;
+}
+
+/* ========================================
+   4. STATES
+   ======================================== */
+.tabBtn.active {
+    background: #243b42;
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(36, 59, 66, 0.3);
+}
+
+.tabBtn:hover:not(.active) {
+    background: rgba(36, 59, 66, 0.1);
+}
+
+.inputGroup input:focus {
+    outline: none;
+    border-color: #243b42;
+    box-shadow: 0 0 0 3px rgba(36, 59, 66, 0.1);
+}
+
+.signupBtn:hover {
+    background: #1a2c33;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(36, 59, 66, 0.3);
+}
+
+.signupBtn:active {
+    transform: translateY(0);
+}
+
+.signupBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.signinBtn:hover {
+    background: #1a2c33;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(36, 59, 66, 0.3);
+}
+
+.signinBtn:active {
+    transform: translateY(0);
+}
+
+.signinBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.loginLink:hover {
+    color: #1a2c33;
+    text-decoration: underline;
+}
+
+.tabBtn:focus,
+.inputGroup input:focus,
+.signupBtn:focus,
+.signinBtn:focus,
+.customCheckbox:focus-within {
+    outline: 2px solid #243b42;
+    outline-offset: 2px;
+}
+
+.inputGroup input:invalid:not(:placeholder-shown) {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.inputGroup input:valid:not(:placeholder-shown) {
+    border-color: #27ae60;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}
+
+.logoutBtn.primary {
+    background: #243b42;
+    color: white;
+    border: 2px solid #243b42;
+}
+
+.logoutBtn.primary:hover {
+    background: #1a2c33;
+    border-color: #1a2c33;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(36, 59, 66, 0.3);
+}
+
+.logoutBtn .secondary {
+    background: transparent;
+    color: #243b42;
+    border: 2px solid #243b42;
+}
+
+.logoutBtn .secondary:hover {
+    background: #243b42;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(36, 59, 66, 0.3);
+}
+
+.logoutBtn:active {
+    transform: translateY(0);
+}
+
+/* ========================================
+   5. ANIMATIONS
+   ======================================== */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+/* ========================================
+   6. MEDIA QUERIES
+   ======================================== */
+@media (max-width: 1200px) {
+    #signupForm {
+        padding: 40px 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #signupForm {
+        padding: 10px 40px;
+        overflow-y: auto;
+        max-width: 100%;
+    }
+
+    #signupImage{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #signupContainer {
+        flex-direction: column;
+    }
+    
+    /* #signupForm {
+        flex: none;
+        min-height: 0;
+        max-height: 100vh;
+        padding: 10px 24px;
+        overflow-y: auto;
+    } */
+    
+    .formHeader h1 {
+        font-size: 28px;
+    }
+    
+    .nameFields,
+    .passwordFields {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .overlayContent {
+        padding: 20px;
+    }
+    
+    .overlayContent h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .overlayContent p {
+        font-size: 14px;
+    }
+
+    .logoutActions {
+        flex-direction: column;
+    }
+    
+    .logoutMessage h2 {
+        font-size: 20px;
+    }
+    
+    .logoutMessage p {
+        font-size: 14px;
+    }
+    
+    .logoutIcon {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #signupForm {
+        padding: 10px 16px;
+        overflow-y: auto;
+    }
+    
+    .formHeader h1 {
+        font-size: 24px;
+    }
+    
+    .formHeader p {
+        font-size: 14px;
+    }
+    
+    .inputGroup input {
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+    
+    .signupBtn {
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .signinBtn {
+        padding: 16px;
+        font-size: 15px;
+    }
+}
+
+/* ========================================
+   7. MESSAGE STYLES
+   ======================================== */
+.error-message {
+    background-color: #fee;
+    border: 1px solid #fcc;
+    color: #c33;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.error-message::before {
+    content: "⚠️";
+    font-size: 16px;
+}
+
+.success-message {
+    background-color: #efe;
+    border: 1px solid #cfc;
+    color: #363;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.success-message::before {
+    content: "✅";
+    font-size: 16px;
+}
+
+.loading-message {
+    background-color: #eef;
+    border: 1px solid #ccf;
+    color: #336;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.loading-message::before {
+    content: "⏳";
+    font-size: 16px;
+}
