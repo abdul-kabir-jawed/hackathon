@@ -563,6 +563,7 @@ body {
     scroll-snap-align: start;
     scroll-margin-inline-start: 0;
     transition: all 0.3s ease;
+    height: 400px;
 }
 
 .doctor-card:hover {
@@ -642,7 +643,6 @@ body {
     height: 180px;
     position: absolute;
     width: 200px;
-    z-index: 2;
     pointer-events: none;
 }
 
