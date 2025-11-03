@@ -89,7 +89,6 @@ body {
     background: #243b42;
     color: #fff;
     border: none;
-    z-index: 1001;
 }
 #navToggle {
     display: none;
